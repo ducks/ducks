@@ -6,7 +6,7 @@ observability infrastructure, distributed systems.
 
 ## tech
 
-![My Skills](https://skillicons.dev/icons?i=nodejs,rust,ts,py,react,docker,postgres,nix,linux,bash,vim,kubernetes,terraform,eslint,prometheus)
+![My Skills](https://skillicons.dev/icons?i=nodejs,rust,ts,py,react,docker,postgres,nix,linux,bash,vim,kubernetes,terraform,git,prometheus)
 
 ## recent projects
 
