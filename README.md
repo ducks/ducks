@@ -6,10 +6,7 @@ observability infrastructure, distributed systems.
 
 ## tech
 
-[![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Rust](https://img.shields.io/badge/-Rust-000?logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Linux](https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black)](https://kernel.org/)
+![My Skills](https://skillicons.dev/icons?i=nodejs,rust,ts,py,react,docker,postgres,nix,linux,bash,vim,kubernetes,terraform,eslint,prometheus)
 
 ## recent projects
 
