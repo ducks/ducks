@@ -52,6 +52,7 @@ Lightweight terminal-based music player inspired by cmus:
 - Custom library indexing and local file scanning
 
 [repo](https://github.com/ducks/shelltrax)
+[blog post](https://jakegoldsborough.com/blog/2025/introducing-shelltrax/)
 
 ### Reverse Engineering the UDisc API
 
