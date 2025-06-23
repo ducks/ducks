@@ -66,6 +66,22 @@ used internally by their web app. This project explores:
 [repo](https://github.com/ducks/open-udisc-api)
 [blog post](https://jakegoldsborough.com/blog/2025/reverse-engineering-udisc-api-part-1/)
 
+### GitVote (Decentralized Git-based voting system)
+
+A fully decentralized, verifiable voting system built entirely on Git:
+
+- Votes submitted via forked branches and pull requests
+- Immutable hash-linked blocks generated post-merge
+- CI-enforced validation of vote format, schema compliance, and duplicate
+  prevention
+- Fully auditable offline: entire election state lives in the Git repo
+- No servers, backend, or blockchain infrastructure required
+- Rust CLI tool with modular subcommands (`cast`, `validate`, `build-chain`,
+  `tally`)
+
+[repo](https://github.com/ducks/gitvote)
+[blog post](https://jakegoldsborough.com/blog/2025/building-a-voting-system-with-git/)
+
 ## Interests
 
 - Rust, TypeScript, Node.js
