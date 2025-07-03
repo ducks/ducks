@@ -54,19 +54,6 @@ Lightweight terminal-based music player inspired by cmus:
 [repo](https://github.com/ducks/shelltrax)
 [blog post](https://jakegoldsborough.com/blog/2025/introducing-shelltrax/)
 
-### Reverse Engineering the UDisc API
-
-A multi-part technical blog series reverse engineering the UDisc `.data` API format,
-used internally by their web app. This project explores:
-
-- Schema-indexed binary JSON payload decoding
-- Dynamic schema mapping and key resolution
-- Building a standalone TypeScript client library to parse `.data` responses
-- Resolving nested course, layout, hole, and smart layout structures
-
-[repo](https://github.com/ducks/open-udisc-api)
-[blog post](https://jakegoldsborough.com/blog/2025/reverse-engineering-udisc-api-part-1/)
-
 ### GitVote (Decentralized Git-based voting system)
 
 A fully decentralized, verifiable voting system built entirely on Git:
