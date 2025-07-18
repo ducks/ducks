@@ -1,4 +1,4 @@
-<link rel="me=" href="https://hachyderm.io/@ducks" />
+<link rel="me" href="https://hachyderm.io/@ducks" />
 
 # whoami
 
