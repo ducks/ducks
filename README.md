@@ -1,3 +1,5 @@
+<link rel="me=" href="https://hachyderm.io/@ducks" />
+
 # whoami
 
 Software engineer who enjoys working on developer tooling, backend services,
