@@ -3,7 +3,7 @@
 # whoami
 
 Software engineer who enjoys working on developer tooling, backend services,
-observability infrastructure, distributed systems.
+observability infrastructure, and distributed systems.
 
 
 ## tech
