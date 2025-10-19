@@ -28,6 +28,23 @@ observability infrastructure, and distributed systems.
 
 ## recent projects
 
+### Discourse Plugin Experiments
+
+Pushing the boundaries of what the Discourse platform can do.
+
+- **Yaks: Virtual Currency System** - A Discourse plugin for spendable in-forum currency
+  Implements topic pinning, boosting, and custom flair using Discourse's APIs and
+  background jobs.
+  [repo](https://github.com/ducks/discourse-yaks)
+  [part 1](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-1/)
+  [part 2](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-2/)
+  [part 3](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-3/)
+
+- **Transit Tracker** - Live transit departure board built entirely in Discourse topics
+  Uses GTFS feeds (Amtrak, MTA) and the AviationStack API to render real-time schedules.
+  [repo](https://github.com/ducks/discourse-transit-tracker)
+  [blog](https://jakegoldsborough.com/blog/2025/building-transit-tracker-in-discourse/)
+
 ### PostgreSQL Prometheus Exporter
 
 A full-featured, PostgreSQL exporter for Prometheus:
