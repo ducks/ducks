@@ -12,7 +12,9 @@ observability infrastructure, and distributed systems.
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" width="100" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="100" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" width="100" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" width="100" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" width="100" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" width="100" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" width="100" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" width="100" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" width="100" />
@@ -65,13 +67,30 @@ A full-featured, PostgreSQL exporter for Prometheus:
 
 Lightweight terminal-based music player inspired by cmus:
 
-- Built with async Rust, crossterm, and Symphonia for audio decoding
-- Supports FLAC metadata extraction and seeking
-- Direct screen selection (non-cycling interface)
-- Custom library indexing and local file scanning
+- Smart metadata handling with directory-based album grouping
+- Filename fallbacks for missing ID3 tags (no more "Unknown Title")
+- ZIP import: Extract albums directly from compressed files
+- Search functionality with fuzzy matching
+- Delete from library without touching files
+- Playback controls with autoplay and repeat modes (Off/All/Track)
+- macOS compatibility (filters __MACOSX artifacts)
+- Automated releases via GitHub Actions
 
 [repo](https://github.com/ducks/shelltrax)
 [blog post](https://jakegoldsborough.com/blog/2025/introducing-shelltrax/)
+
+### Shellcast (TUI podcast player in Rust)
+
+Terminal-based podcast player with RSS/Atom feed support:
+
+- Built with ratatui and crossterm for the TUI
+- Podcast discovery via gpodder.net integration
+- Episode playback with ALSA/CPAL audio backend
+- Feed refresh and episode tracking
+- Pause/resume with proper state management (no ALSA underruns)
+- Persistent library storage
+
+[repo](https://github.com/ducks/shellcast)
 
 ### GitVote (Decentralized Git-based voting system)
 
@@ -91,8 +110,11 @@ A fully decentralized, verifiable voting system built entirely on Git:
 
 ## Interests
 
-- Rust, TypeScript, Node.js
-- Systems design
-- Observability & monitoring
-- Infrastructure automation
-- TUIs
+- Rust (TUI development, audio processing, systems programming)
+- TypeScript, Node.js
+- Ruby on Rails & Discourse plugin development
+- Systems design & distributed systems
+- Observability & monitoring (Prometheus, metrics exporters)
+- Infrastructure automation (Docker, CI/CD, Makefiles)
+- Developer tooling & CLI applications
+- Music metadata standards (ID3, RSS/Atom feeds)
