@@ -30,83 +30,87 @@ observability infrastructure, and distributed systems.
 
 ## recent projects
 
-### Discourse Plugin Experiments
+### Scrob - Self-Hosted Music Scrobbling
 
-Pushing the boundaries of what the Discourse platform can do.
+Self-hosted alternative to Last.fm with public profile pages:
 
-- **Yaks: Virtual Currency System** - A Discourse plugin for spendable in-forum currency
-  Implements topic pinning, boosting, and custom flair using Discourse's APIs and
-  background jobs.
-  [repo](https://github.com/ducks/discourse-yaks)
-  [part 1](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-1/)
-  [part 2](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-2/)
-  [part 3](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-3/)
+- Built with Rust, Axum, and PostgreSQL
+- Token-based authentication with bcrypt password hashing
+- RESTful API for submitting scrobbles from music players
+- Public profile pages showing listening history and stats
+- Embedded migrations via sqlx
+- Designed for single-user or small community deployment
 
-- **Transit Tracker** - Live transit departure board built entirely in Discourse topics
-  Uses GTFS feeds (Amtrak, MTA) and the AviationStack API to render real-time schedules.
-  [repo](https://github.com/ducks/discourse-transit-tracker)
-  [blog](https://jakegoldsborough.com/blog/2025/building-transit-tracker-in-discourse/)
+[repo](https://github.com/ducks/scrob)
+[blog post](https://jakegoldsborough.com/blog/2026/building-scrob-self-hosted-scrobbling/)
 
-### PostgreSQL Prometheus Exporter
+### burrow-systemd - VPS Infrastructure Management
 
-A full-featured, PostgreSQL exporter for Prometheus:
+Running personal infrastructure with systemd instead of Docker:
 
-- Multi-database scrape support via config-driven connection pools
-- Dynamic metric registration from SQL queries (`queries.json`)
-- Full scrape fault isolation using `Promise.allSettled`
-- API key secured `/metrics` endpoint
-- Self-observability metrics (scrape duration, scrape errors, scrape lockouts)
-- Graceful shutdown & pool-level error handling
-- Fully containerized with Docker Compose
-- CI pipeline with automated tests using Vitest
+- Manages Gitea, Woodpecker CI, Scrob, GoatCounter (3 instances), Caddy, PostgreSQL
+- Declarative config in git with simple bash scripts
+- Bootstrap script for initial setup, deploy script for updates
+- Automated binary updates via GitHub releases API
+- Simple, explicit, debuggable - no container orchestration overhead
 
-[repo](https://github.com/ducks/node-postgres-exporter)
-[blog post](https://jakegoldsborough.com/blog/2025/building-node-postgres-exporter/)
+[repo](https://github.com/ducks/burrow-systemd)
+[blog post](https://jakegoldsborough.com/blog/2026/running-infrastructure-with-systemd/)
 
-### Shelltrax (TUI music player in Rust)
+### JOBL + SRG - Structured Resume Tooling
+
+A TOML-based resume format with strict validation and static generation:
+
+- **JOBL**: Structured resume specification with version-aware parsing
+- Type-safe validation with comprehensive error reporting
+- Portable `.jobl` files for version control and collaboration
+- **SRG**: Static generator converting JOBL to HTML and PDF
+- Clean, professional templates optimized for screen and print
+
+[JOBL repo](https://github.com/ducks/JOBL)
+[SRG repo](https://github.com/ducks/SRG)
+
+### Yaks - Virtual Currency for Discourse
+
+A Discourse plugin implementing spendable in-forum currency:
+
+- Topic pinning, boosting, and custom flair purchases
+- Background jobs for transaction processing
+- Integration with Discourse's user system and permissions
+- Custom admin interface for currency management
+
+[repo](https://github.com/ducks/discourse-yaks)
+[part 1](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-1/)
+[part 2](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-2/)
+[part 3](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-3/)
+[part 4](https://jakegoldsborough.com/blog/2025/building-yaks-virtual-currency-part-4/)
+
+### Shelltrax - TUI Music Player
 
 Lightweight terminal-based music player inspired by cmus:
 
 - Smart metadata handling with directory-based album grouping
-- Filename fallbacks for missing ID3 tags (no more "Unknown Title")
-- ZIP import: Extract albums directly from compressed files
+- Filename fallbacks for missing ID3 tags
+- ZIP import for extracting albums from compressed files
 - Search functionality with fuzzy matching
-- Delete from library without touching files
-- Playback controls with autoplay and repeat modes (Off/All/Track)
-- macOS compatibility (filters __MACOSX artifacts)
-- Automated releases via GitHub Actions
+- Playback controls with autoplay and repeat modes
+- macOS compatibility
 
 [repo](https://github.com/ducks/shelltrax)
 [blog post](https://jakegoldsborough.com/blog/2025/introducing-shelltrax/)
 
-### Shellcast (TUI podcast player in Rust)
+### Shellcast - TUI Podcast Player
 
 Terminal-based podcast player with RSS/Atom feed support:
 
-- Built with ratatui and crossterm for the TUI
+- Built with ratatui and crossterm
 - Podcast discovery via gpodder.net integration
 - Episode playback with ALSA/CPAL audio backend
 - Feed refresh and episode tracking
-- Pause/resume with proper state management (no ALSA underruns)
+- Pause/resume with proper state management
 - Persistent library storage
 
 [repo](https://github.com/ducks/shellcast)
-
-### GitVote (Decentralized Git-based voting system)
-
-A fully decentralized, verifiable voting system built entirely on Git:
-
-- Votes submitted via forked branches and pull requests
-- Immutable hash-linked blocks generated post-merge
-- CI-enforced validation of vote format, schema compliance, and duplicate
-  prevention
-- Fully auditable offline: entire election state lives in the Git repo
-- No servers, backend, or blockchain infrastructure required
-- Rust CLI tool with modular subcommands (`cast`, `validate`, `build-chain`,
-  `tally`)
-
-[repo](https://github.com/ducks/gitvote)
-[blog post](https://jakegoldsborough.com/blog/2025/building-a-voting-system-with-git/)
 
 ## Interests
 
