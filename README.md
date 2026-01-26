@@ -30,6 +30,20 @@ observability infrastructure, and distributed systems.
 
 ## recent projects
 
+### Lok - Multi-LLM Orchestration
+
+Local orchestration layer for coordinating multiple LLM backends:
+
+- Run prompts across Claude, Codex, Gemini, Ollama in parallel
+- Built-in tasks for code review, security audits, N+1 detection
+- Declarative TOML workflows with step dependencies and variable interpolation
+- Codebase context detection to reduce false positives
+- Conductor mode for LLM-driven backend selection
+
+[repo](https://github.com/ducks/lok)
+[crates.io](https://crates.io/crates/lokomotiv)
+[blog post](https://jakegoldsborough.com/blog/2026/introducing-lok-multi-llm-orchestration/)
+
 ### Scrob - Self-Hosted Music Scrobbling
 
 Self-hosted alternative to Last.fm with public profile pages:
