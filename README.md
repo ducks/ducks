@@ -58,18 +58,19 @@ Self-hosted alternative to Last.fm with public profile pages:
 [repo](https://github.com/ducks/scrob)
 [blog post](https://jakegoldsborough.com/blog/2026/building-scrob-self-hosted-scrobbling/)
 
-### burrow-systemd - VPS Infrastructure Management
+### pond-nix - Declarative VPS Infrastructure
 
-Running personal infrastructure with systemd instead of Docker:
+NixOS-based infrastructure management for personal services:
 
-- Manages Gitea, Woodpecker CI, Scrob, GoatCounter (3 instances), Caddy, PostgreSQL
-- Declarative config in git with simple bash scripts
-- Bootstrap script for initial setup, deploy script for updates
-- Automated binary updates via GitHub releases API
-- Simple, explicit, debuggable - no container orchestration overhead
+- Manages Gitea, Woodpecker CI, Scrob, GoatCounter (3 instances), Caddy
+- Fully declarative configuration with atomic rollbacks
+- Reproducible builds and deployments via Nix
+- Service definitions in version control
+- Simple deployment: `nixos-rebuild switch`
+- Migration from manual systemd setup to declarative NixOS
 
-[repo](https://github.com/ducks/burrow-systemd)
-[blog post](https://jakegoldsborough.com/blog/2026/running-infrastructure-with-systemd/)
+[repo](https://github.com/ducks/pond-nix)
+[blog post](https://jakegoldsborough.com/blog/2026/real-declarative-infrastructure-nixos/)
 
 ### JOBL + SRG - Structured Resume Tooling
 
